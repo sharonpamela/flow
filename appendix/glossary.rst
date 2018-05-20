@@ -15,15 +15,11 @@ Use an isolation environment policy when you want to block all traffic, regardle
 Quarantine Policy
 +++++++++++++++++
 
-Use a quarantine policy when you want to isolate a compromised or infected VM and optionally want to subject it to forensics. You cannot modify this policy. The two modes to quarentine a VM are Strict or Forensic.
+Use a quarantine policy when you want to isolate a compromised or infected VM and optionally want to subject it to forensics. You cannot modify this policy. The two modes to quarantine a VM are Strict or Forensic.
 
-Strict
-------
-Use this value when you want to block all inbound and outbound traffic.
+Strict: Use this value when you want to block all inbound and outbound traffic.
 
-Forensic
---------
-Use this value when you want to block all inbound and outbound traffic except the traffic to and from categories that contain forensic tools.
+Forensic: Use this value when you want to block all inbound and outbound traffic except the traffic to and from categories that contain forensic tools.
 
 AppTier
 +++++++
