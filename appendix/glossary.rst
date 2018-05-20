@@ -2,17 +2,39 @@
 Glossary
 -------------
 
-Term
-++++
+Application Security Policy
++++++++++++++++++++++++++++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat eget ultrices mollis. Aliquam convallis, magna quis bibendum consequat, eros metus ornare turpis, eu fermentum orci ante sit amet elit. Morbi tincidunt sit amet urna ac commodo. Vestibulum eu egestas neque. Quisque interdum ante tincidunt felis tempus, in varius dolor cursus. Nam maximus efficitur magna non rutrum. Curabitur felis sapien, accumsan vel condimentum dignissim, faucibus in metus. Aenean molestie eros nec urna consequat sagittis. Pellentesque eu tempus urna. Cras eget consequat metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce mollis purus id purus sodales scelerisque.
+Use an application security policy when you want to secure an application by specifying allowed traffic sources and destinations.
 
-Another Term
-++++++++++++
+Isolation Environment Policy
+++++++++++++++++++++++++++++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat eget ultrices mollis. Aliquam convallis, magna quis bibendum consequat, eros metus ornare turpis, eu fermentum orci ante sit amet elit. Morbi tincidunt sit amet urna ac commodo. Vestibulum eu egestas neque. Quisque interdum ante tincidunt felis tempus, in varius dolor cursus. Nam maximus efficitur magna non rutrum. Curabitur felis sapien, accumsan vel condimentum dignissim, faucibus in metus. Aenean molestie eros nec urna consequat sagittis. Pellentesque eu tempus urna. Cras eget consequat metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce mollis purus id purus sodales scelerisque.
+Use an isolation environment policy when you want to block all traffic, regardless of direction, between two groups of VMs identified by their category. VMs within a group can communicate with each other.
 
-Yet Another Term
-++++++++++++++++
+Quarantine Policy
++++++++++++++++++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies erat eget ultrices mollis. Aliquam convallis, magna quis bibendum consequat, eros metus ornare turpis, eu fermentum orci ante sit amet elit. Morbi tincidunt sit amet urna ac commodo. Vestibulum eu egestas neque. Quisque interdum ante tincidunt felis tempus, in varius dolor cursus. Nam maximus efficitur magna non rutrum. Curabitur felis sapien, accumsan vel condimentum dignissim, faucibus in metus. Aenean molestie eros nec urna consequat sagittis. Pellentesque eu tempus urna. Cras eget consequat metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce mollis purus id purus sodales scelerisque.
+Use a quarantine policy when you want to isolate a compromised or infected VM and optionally want to subject it to forensics. You cannot modify this policy. The two modes to quarentine a VM are Strict or Forensic.
+
+Strict
+------
+Use this value when you want to block all inbound and outbound traffic.
+
+Forensic
+--------
+Use this value when you want to block all inbound and outbound traffic except the traffic to and from categories that contain forensic tools.
+
+AppTier
++++++++
+
+Add values for the tiers in your application (such as web, application_logic, and database) to this category and use the values to divide the application into tiers when configuring a security policy.
+
+AppType
++++++++
+
+Associate the VMs in your application with the appropriate built-in application type such as Exchange and Apache_Spark. You can also update the category to add values for applications not listed in this category.
+
+Environment
++++++++++++
+Add values for environments that you want to isolate from each other and then associate VMs with the values.
