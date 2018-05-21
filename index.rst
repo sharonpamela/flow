@@ -6,8 +6,10 @@
   :name: _labs
   :hidden:
 
-  examplelab1/examplelab1
-  examplelab2/examplelab2
+  enable_flow/enable_flow
+  quarantine_vm/quarantine_vm
+  isolate_environments/isolate_environments
+  secure_app/secure_app
 
 .. toctree::
   :maxdepth: 2
@@ -15,7 +17,7 @@
   :name: _optional_labs
   :hidden:
 
-  examplelab3/examplelab3
+  flow_visualization/flow_viz
 
 .. toctree::
   :maxdepth: 2
@@ -39,8 +41,7 @@ What's New
 
 - Workshop updated for the following software versions:
   - AOS 5.6
-  - AFS 3.0
-- Added :ref:`example_lab_3`
+  - Prism Central 5.6
 
 Access Instructions
 +++++++++++++++++++
