@@ -49,10 +49,15 @@ Select the green check box to add this source to the inbound allowed list.
 .. figure:: images/add_env_flow.png
 
 Select OK to Add to Rule
+
 Hover over the blue **Environment: Dev** source and select the pencil icon to edit the rule.
+
 Select the pencil on **AppType: app-abc** to define specific ports and protocols.
+
 Currently ICMP is allowed due to the ping detected in the previous task.
+
 Select **Save** to save the ICMP rule.
+
 Select **Next** to review the changes to the policy.
 
 
@@ -74,4 +79,4 @@ Is this traffic blocked?
 Takeaways
 +++++++++
 
-- Flow visualization allows you to visualize the flows that are occurring within a policy. From there it's really easy to edit the policy in order to add or remove the flows that should or should not be occurring. 
+- Flow visualization allows you to visualize the flows that are occurring within a policy. From there it's really easy to edit the policy in order to add or remove the flows that should or should not be occurring.
